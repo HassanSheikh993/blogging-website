@@ -1,0 +1,100 @@
+/* Main Container */
+.signup_container {
+    max-width: 500px;
+    margin: 0.5rem auto;
+    padding: 2rem;
+    font-family: 'Georgia', serif;
+    background: linear-gradient(to right, #d64040, #f6b93b);
+}
+
+.signup_title{
+    text-align: center;
+     font-size: 40px;
+    font-weight: bold;
+}
+
+/* Form Styling */
+.signup_form {
+    background: #fffffff0;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+/* Labels */
+.signup_label {
+    display: block;
+    margin: 1.5rem 0 0.5rem;
+    color: #333;
+    font-size: 1.1rem;
+}
+
+/* Input Fields */
+.signup_input {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-family: 'Georgia', serif;
+    transition: border 0.3s ease;
+}
+
+.signup_input:focus {
+    outline: none;
+    border-color: #d64040;
+    box-shadow: 0 0 0 2px rgba(214, 64, 64, 0.2);
+}
+
+/* Submit Button */
+.signup_button {
+    background: #d64040;
+    color: white;
+    border: none;
+    padding: 0.8rem;
+    margin-top: 2rem;
+    font-size: 1rem;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Georgia', serif;
+    width: 100%;
+}
+
+.signup_button:hover {
+    background: #b53030;
+    transform: translateY(-2px);
+}
+
+/* Message Styling */
+.signup_message {
+    text-align: center;
+    color: #fcebeb;
+    margin-top: 1rem;
+    font-size: 1.1rem;
+}
+
+.signup_newAccount{
+    color: #333;
+    cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .signup_container {
+        padding: 1rem;
+        margin: 1rem;
+    }
+    
+    .signup_form {
+        padding: 1.5rem;
+    }
+    
+    .signup_input {
+        padding: 0.7rem;
+    }
+    
+    .signup_button {
+        padding: 0.7rem;
+    }
+}

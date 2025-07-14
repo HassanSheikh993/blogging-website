@@ -1,0 +1,102 @@
+/* Main Container */
+.signin_container {
+    max-width: 500px;
+    margin: 2rem auto;
+    padding: 2rem;
+    font-family: 'Georgia', serif;
+
+    /* background-image: url("https://cdn.pixabay.com/photo/2018/05/04/15/37/writing-");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; */
+    background: linear-gradient(to right, #d64040, #f6b93b);
+}
+
+.signin_title{
+    text-align: center;
+    /* margin-left: 150px; */
+    font-size: 40px;
+    font-weight: bold;
+}
+
+/* Form Styling */
+.signin_form {
+     background: #fffffff0;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+    border: 1px solid #eee;
+}
+
+/* Labels */
+.signin_label {
+    display: block;
+    margin: 1.2rem 0 0.5rem;
+    color: #333;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+/* Input Fields */
+.signin_input {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-family: 'Georgia', serif;
+    transition: all 0.3s ease;
+}
+
+.signin_input:focus {
+    outline: none;
+    border-color: #d64040;
+    box-shadow: 0 0 0 2px rgba(214, 64, 64, 0.2);
+}
+
+/* Submit Button */
+.signin_button {
+    background: #d64040;
+    color: white;
+    border: none;
+    padding: 0.8rem;
+    margin-top: 2rem;
+    font-size: 1rem;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Georgia', serif;
+    width: 100%;
+}
+
+.signin_button:hover {
+    background: #b53030;
+    transform: translateY(-2px);
+}
+
+/* Message Styling */
+.signin_message {
+    text-align: center;
+    color: #d64040;
+    margin-top: 1.5rem;
+    font-size: 1rem;
+    padding: 0.5rem;
+    border-radius: 4px;
+}
+
+.signin_p{
+    color: #333;
+    cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .signin_container {
+        padding: 1rem;
+        margin: 2rem auto;
+    }
+    
+    .signin_form {
+        padding: 1.5rem;
+    }
+}

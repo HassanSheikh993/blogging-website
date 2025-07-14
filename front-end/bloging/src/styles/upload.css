@@ -1,0 +1,107 @@
+/* Form Container */
+form {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+  font-family: 'Georgia', serif;
+}
+
+/* Form Labels */
+label {
+  display: block;
+  margin: 1.5rem 0 0.5rem;
+  color: #333;
+  font-size: 1.1rem;
+}
+
+/* Form Inputs */
+input[type="text"] {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-family: 'Georgia', serif;
+  transition: border 0.3s ease;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  border-color: #d64040;
+  box-shadow: 0 0 0 2px rgba(214, 64, 64, 0.2);
+}
+
+/* Content Input (Taller) */
+input[name="content"] {
+  min-height: 150px;
+  vertical-align: top;
+}
+
+/* Submit Button */
+button[type="submit"] {
+  background: #d64040;
+  color: white;
+  border: none;
+  padding: 0.8rem 2rem;
+  margin-top: 2rem;
+  font-size: 1rem;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Georgia', serif;
+  display: block;
+  width: 100%;
+}
+
+button[type="submit"]:hover {
+  background: #b53030;
+  transform: translateY(-2px);
+}
+
+/* Message Styling */
+p {
+  text-align: center;
+  color: #d64040;
+  margin-top: 1rem;
+  font-size: 1.1rem;
+}
+
+
+
+textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-family: 'Georgia', serif;
+  transition: border 0.3s ease;
+  resize: vertical; /* Allows vertical resizing */
+  min-height: 120px; /* Optional: give it some height */
+}
+
+textarea:focus {
+  outline: none;
+  border-color: #d64040;
+  box-shadow: 0 0 0 2px rgba(214, 64, 64, 0.2);
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  form {
+    padding: 1.5rem;
+    margin: 1rem;
+  }
+  
+  input[type="text"] {
+    padding: 0.7rem;
+  }
+  
+  button[type="submit"] {
+    padding: 0.7rem;
+  }
+}

@@ -1,0 +1,258 @@
+/* Home Container */
+.home {
+  text-align: center;
+  padding: 4rem 2rem;
+  background-color: #f9f9f9;
+  border-bottom: 1px solid #e0e0e0;
+  font-family: 'Georgia', serif;
+
+  background-image: url("https://cdn.pixabay.com/photo/2018/04/03/23/24/composition-3288396_1280.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Main Header */
+.home_header {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #d64040;
+  margin-bottom: 1rem;
+  letter-spacing: -0.05em;
+  
+}
+
+/* Tagline */
+.home_tagline {
+  font-size: 1.5rem;
+  color: #666;
+  font-weight: 300;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Decorative Elements (Optional) */
+.home::after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 4px;
+  background-color: #d64040;
+  margin: 2rem auto 0;
+  opacity: 0.5;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .home {
+    padding: 3rem 1rem;
+  }
+  
+  .home_header {
+    font-size: 2.5rem;
+  }
+  
+  .home_tagline {
+    font-size: 1.2rem;
+    padding: 0 1rem;
+  }
+}
+
+
+
+
+/* -------------------------- */
+
+/* Latest Blogs Container */
+.home_latest_blog {
+  max-width: 1200px;
+  margin: 3rem auto;
+  padding: 0 2rem;
+  font-family: 'Georgia', serif;
+}
+
+.home_latest_blog h3 {
+  font-size: 1.8rem;
+  color: #333;
+  border-bottom: 2px solid #d64040;
+  padding-bottom: 0.5rem;
+  display: inline-block;
+  margin-bottom: 2rem;
+}
+
+/* Blog Cards Grid */
+.home_blog_details {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 2rem;
+}
+
+/* Individual Blog Card */
+.blog_card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  position: relative;
+  border: 1px solid #eee;
+  margin-bottom: 10px;
+}
+
+.blog_card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Blog Content */
+.blog_card h4 {
+  font-size: 1.4rem;
+  color: #d64040;
+  margin-bottom: 0.5rem;
+}
+
+.blog_card h5 {
+  font-size: 1rem;
+  color: #666;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  font-style: italic;
+}
+
+.blog_card p {
+  color: #444;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+
+/* Like Button Styling */
+.blog_card .fa-thumbs-up {
+  color: #888;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-right: 8px;
+}
+
+.blog_card .fa-thumbs-up:hover {
+  color: #d64040;
+  transform: scale(1.1);
+}
+
+.blog_card .fa-thumbs-up.active {
+  color: #d64040;
+}
+
+.blog_card .total_likes {
+  display: inline;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .home_latest_blog {
+    padding: 0 1rem;
+    margin: 2rem auto;
+  }
+  
+  .home_blog_details {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .blog_card {
+    padding: 1.5rem;
+  }
+  
+  .home_latest_blog h3 {
+    font-size: 1.5rem;
+  }
+  
+  .blog_card h4 {
+    font-size: 1.2rem;
+  }
+}
+
+
+/* ------------------------ */
+
+/* Main Container */
+.middle_part_container {
+  max-width: 1200px;
+  margin: 4rem auto;
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  font-family: 'Georgia', serif;
+}
+
+/* Content Section */
+.middle_part_content {
+  flex: 1;
+  
+}
+
+.middle_part_content p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #444;
+  text-align: justify;
+  margin: 0;
+}
+
+/* Image Section */
+.middle_part_image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.middle_part_image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.middle_part_image img:hover {
+  transform: scale(1.02);
+}
+
+.middle_part_content h4{
+  font-weight: bold;
+  font-size: 30px;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .middle_part_container {
+    flex-direction: column;
+    gap: 2rem;
+    margin: 3rem auto;
+  }
+  
+  .middle_part_content,
+  .middle_part_image {
+    width: 100%;
+  }
+  
+  .middle_part_content p {
+    font-size: 1rem;
+    text-align: left;
+  }
+}
+
+@media (max-width: 576px) {
+  .middle_part_container {
+    padding: 0 1.5rem;
+    margin: 2rem auto;
+  }
+  
+  .middle_part_image img {
+    max-width: 90%;
+  }
+}
