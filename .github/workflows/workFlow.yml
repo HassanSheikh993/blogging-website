@@ -1,0 +1,32 @@
+name: CI-CD-pipeline
+
+on:
+  push:
+    branches:
+      - "main"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      
+      - name: Docker Login
+        uses: docker/login-action@2
+        with:
+          username: hassansheikh992
+          password: ${{ secrets.DOCKER_HUB_TOKEN }}
+
+      - name: Build and Push Backend
+        run: |
+          docker build -t hassansheikh993/blogging-web-backend:latest ./server
+          docker push hassansheikh993/blogging-web-backend:latest
+
+      - name: Build and Push Frontend
+        run: |
+          docker build -t hassansheikh993/blogging-web-frontend:latest ./front-end/bloging
+          docker push hassansheikh993/blogging-web-frontend:latest
+
+
