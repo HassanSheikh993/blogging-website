@@ -13,7 +13,7 @@ const url = process.env.MONGO_URI || "mongodb://localhost:27017/blogApp";
 
 
 app.use(cors({
-  origin: "http://localhost:5173",  // your React app URL
+  origin: "http://frontend:80",  // your React app URL
   credentials: true                 // ✅ allow cookies to be sent
 }));
 
